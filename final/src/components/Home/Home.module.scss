@@ -1,0 +1,28 @@
+
+$lightblue: rgb(217, 243, 252);
+.Home {
+    max-width: 100%;
+    background-color: $lightblue;
+    display: flex;
+    direction: column;
+    text-align: center;
+    flex-flow: column;
+
+    .Header {
+        font-size: 10rem;
+        margin-bottom: 2rem;
+        
+    }
+    form {
+       
+        input {
+            margin: .5rem;
+            max-width: 10rem;
+        }
+    }
+
+    .Signup {
+        margin: 3rem;
+        margin-top: 1rem;
+    }
+}

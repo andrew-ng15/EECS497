@@ -1,19 +1,22 @@
 import React from 'react';
-import classes from './Home.scss';
+import classes from './Home.module.scss';
 
 const Home = () => {
 
 
     return (
-        <div>
-            <h1 classes="Container">RATS Matcher</h1>
-            <form action="/accounts/?target=/" method='POST'>
+        <div className={classes.Home}>
+            <h1 className={classes.Header}>RATS Matcher</h1>
+            <form className={classes.Form} action="/accounts/?target=/" method='POST'>
                 <input type="text" placeholder="Username" required name = "username" />
                 <input type="password" placeholder="Password" required name = "password" />
                 <input type="submit" value="login" />
                 <input type="hidden" name="operation" value="login" />
             </form> 
-            Don't have an account? <a href="/test/"><b>Sign up</b></a>
+            <div className={classes.Signup}>
+                Don't have an account? <a href="/signup/"><b>Sign up</b></a>
+            </div>
+            
         </div>
     );
 };

@@ -1,6 +1,8 @@
 import React from 'react';
 import Home from './components/Home/Home';
 import Test from './components/Test/Test';
+import Signup from './components/Signup/Signup';
+import Search from './components/Search/Search'
 
 import {
     BrowserRouter as Router,
@@ -18,6 +20,8 @@ import {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/test" exact component={Test} />
+                    <Route path="/signup" exact component={Signup} />
+                    <Route path="/search" exact component={Search} />
                 </Switch>
             </Router>
         </React.Fragment>

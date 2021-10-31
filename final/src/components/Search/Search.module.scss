@@ -1,0 +1,30 @@
+.Logo {
+    margin: 20px; 
+    padding:20px
+}
+.Profile {
+    float: right;
+    display: flex;
+
+    img {
+        margin: 20px;
+    }
+}
+
+.SearchBar {
+    position: absolute;
+    top:50%;
+    left:20%;
+    display:flex;
+
+    .Text {
+        width: 500px;
+        height:30px;
+        border-radius:20px;
+    }
+    .Submit {
+        height: 30px;
+        border-radius: 20px;
+        
+    }
+}
