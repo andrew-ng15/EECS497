@@ -1,12 +1,20 @@
 import React from 'react';
-import classes from './Home.module.scss';
+import classes from './Home.scss';
 
 const Home = () => {
 
+
     return (
-        <React.Fragment>
-            hello world
-        </React.Fragment>
+        <div>
+            <h1>RATS Matcher</h1>
+            <form action="/accounts/?target=/" method='POST'>
+                <input type="text" placeholder="Username" required name = "username" />
+                <input type="password" placeholder="Password" required name = "password" />
+                <input type="submit" value="login" />
+                <input type="hidden" name="operation" value="login" />
+            </form> 
+            Don't have an account? <a href="/accounts/create/"><b>Sign up</b></a>
+        </div>
     );
 };
 
