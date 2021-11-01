@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <script>
+
+    function addList() {
+      document.getElementById('hobby_options').innerHTML += 
+        '<input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>' +
+        '<datalist id="hobby_list">' +
+          '<option value="Music">' +
+          '<option value="Art">' +
+          '<option value="Food">' +
+          '<option value="Travel">' +
+          '<option value="Fitness">' +
+          '<option value="Sports">' +
+          '<option value="Movies">' +
+          '<option value="Nightlife">' +
+        '</datalist>' +
+        '<div><br></div>';
+    }
+
+  </script>
+ 
+  <style>
+    body {
+      background-color: white;
+    }
+
+    p {
+      color: black;
+    }
+
+    #profile_pic {
+      position: absolute;
+      left: 100px;
+      top: 150px;
+    }
+
+    #hobbies {
+      position: absolute;
+      left: 100px;
+      top: 200px;
+    }
+
+    #next {
+      position: absolute;
+      left: 500px;
+      top: 400px;
+    }
+
+  </style>
+  
+  <head>
+    <title>Hobbies & Interests</title>
+  </head>
+
+  <body>
+    <div id="profile_pic">
+      <form action="/action_page.php">
+        <label for="img">profile picture:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit">
+      </form>
+    </div>
+    
+    <div id="hobbies">
+      <p>Hobbies & Interests:</p>
+
+      <div id="hobby_options">
+
+        <input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>
+        <datalist id="hobby_list">
+          <option value="Music">
+          <option value="Art">
+          <option value="Food">
+          <option value="Travel">
+          <option value="Fitness">
+          <option value="Sports">
+          <option value="Movies">
+          <option value="Nightlife">
+        </datalist>
+
+        <div>
+          <br>
+        </div>
+        
+        <input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>
+        <datalist id="hobby_list">
+          <option value="Music">
+          <option value="Art">
+          <option value="Food">
+          <option value="Travel">
+          <option value="Fitness">
+          <option value="Sports">
+          <option value="Movies">
+          <option value="Nightlife">
+        </datalist>
+
+        <div>
+          <br>
+        </div>
+
+        <input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>
+        <datalist id="hobby_list">
+          <option value="Music">
+          <option value="Art">
+          <option value="Food">
+          <option value="Travel">
+          <option value="Fitness">
+          <option value="Sports">
+          <option value="Movies">
+          <option value="Nightlife">
+        </datalist>
+        
+        <div>
+          <br>
+        </div>
+
+      </div>
+      
+      <div>
+        <button type="button" onclick="addList();">Add More Hobbies!</button>
+      </div>
+      
+    </div>
+
+    <div id="next">
+      <button type="button">Next</button>
+    </div>
+
+  </body>
+
+</html>
