@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Hobbies.module.scss';
 import Hobby from './Hobby/Hobby';
 
 const Hobbies = () => {
 
+    const [inputList, setInputList] = useState([<Hobby />]);
+
+    const onClickHandler = (event) => {
+        setInputList(inputList.concat(<Hobby key={inputList.length} />));
+    }
 
     return (
         <div className={classes.Home}>
@@ -20,59 +25,11 @@ const Hobbies = () => {
                 <p>Hobbies/Interests:</p>
 
                 <div id="hobby_options">
-
-                    <input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>
-                    <datalist id="hobby_list">
-                        <option value="Music"/>
-                        <option value="Art"/>
-                        <option value="Food"/>
-                        <option value="Travel"/>
-                        <option value="Fitness"/>
-                        <option value="Sports"/>
-                        <option value="Movies"/>
-                        <option value="Nightlife"/>
-                    </datalist>
-
-                    <div>
-                    <br />
-                    </div>
-                    
-                    <input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>
-                    <datalist id="hobby_list">
-                        <option value="Music" />
-                        <option value="Art" />
-                        <option value="Food" />
-                        <option value="Travel" />
-                        <option value="Fitness" />
-                        <option value="Sports" />
-                        <option value="Movies" />
-                        <option value="Nightlife" />
-                    </datalist>
-
-                    <div>
-                    <br />
-                    </div>
-
-                    <input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>
-                    <datalist id="hobby_list">
-                        <option value="Music" />
-                        <option value="Art" />
-                        <option value="Food" />
-                        <option value="Travel" />
-                        <option value="Fitness" />
-                        <option value="Sports" />
-                        <option value="Movies" />
-                        <option value="Nightlife" />
-                    </datalist>
-                    
-                    <div>
-                    <br/>
-                    </div>
-
+                    {inputList}
                 </div>
             
                 <div>
-                    <button type="button" onclick="addList();">Add More Hobbies!</button>
+                    <button type="button" onClick={onClickHandler}>Add More Hobbies!</button>
                 </div>
             
             </div>

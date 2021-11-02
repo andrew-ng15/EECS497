@@ -19,29 +19,17 @@ const Hobby = () => {
 
     return (
         <div className={classes.Hobby}>
-            <h1 className={classes.Header}>RATS Matcher</h1>
-            <form className={classes.Form} action="/test/" method='GET'>
-                <input
-                    type="text"
-                    placeholder="Username"
-                    required name = "username"
-                    value={username}
-                    onChange={(event) => setUsername(event.target.value)}
-                />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    required name = "password"
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                />
-                <input type="submit" value="login" onClick={onClickHandler} />
-                <input type="hidden" name="operation" value="login" />
-            </form> 
-            <div className={classes.Signup}>
-                Don't have an account? <a href="/signup/"><b>Sign up</b></a>
-            </div>
-            
+            <input list="hobby_list" name="hobby_in" placeholder="Select Hobbies"/>
+            <datalist id="hobby_list">
+                <option value="Music"/>
+                <option value="Art"/>
+                <option value="Food"/>
+                <option value="Travel"/>
+                <option value="Fitness"/>
+                <option value="Sports"/>
+                <option value="Movies"/>
+                <option value="Nightlife"/>
+            </datalist>
         </div>
     );
 };

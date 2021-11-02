@@ -6,9 +6,9 @@ const Search = () => {
 
     return (
         <div>
-            <img src="1.jpg" className={classes.Logo} />
+            <img src="logo.jpg" className={classes.Logo} />
             <div className={classes.Profile}>
-                <img src="2.jpg" />
+                <img src="profpic.jpg" />
                 <h3>mockuser</h3>
             </div>
             <div className={classes.SearchBar}>
