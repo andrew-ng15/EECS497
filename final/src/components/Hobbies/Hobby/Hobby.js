@@ -3,18 +3,12 @@ import classes from './Hobby.module.scss';
 import { useHistory } from 'react-router-dom';
 
 const Hobby = () => {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
+    const [hobby, setHobby] = useState("");
 
     const history = useHistory();
 
     const onClickHandler = (e) => {
-        if (username === "" || password === "") {
-            alert('Missing username or password');
-            e.preventDefault();
-        } else {
-            history.push('/search/');
-        }
+        
     };
 
     return (

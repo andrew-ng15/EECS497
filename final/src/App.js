@@ -10,8 +10,7 @@ import Hobbies from './components/Hobbies/Hobbies';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
   } from "react-router-dom";
   
   const App = () => {

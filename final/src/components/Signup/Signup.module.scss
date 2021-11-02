@@ -1,0 +1,29 @@
+.Container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-flow: column;
+
+	h1 {
+		margin: 1rem;
+	}
+
+	.Title {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+
+		color: #000000;
+
+	}
+	.Boxes {
+		border-radius: 20px;
+		margin: 1rem;
+		padding: 0.5rem 1rem;
+	}
+}
+.root {
+	background-color: aliceblue;
+}

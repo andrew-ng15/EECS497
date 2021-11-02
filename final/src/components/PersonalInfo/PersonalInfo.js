@@ -13,22 +13,27 @@ const PersonalInfo = () => {
         } else {
             history.push('/hobbies/');
         }
+        console.log(location);
     };
 
     return (
-        <div className = {classes.PersonalInfo}> 
+        <div className={classes.PersonalInfo}> 
             <h1>Enter your location here:</h1>
-            <div className = {classes.box}>
-                <input type="text" id="fname" name="fname" />
+            <div className={classes.box}>
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    onChange={(event) => setLocation(event.target.value)}
+                />
             </div>
-            <div className = {classes.par}>
+            <div className={classes.par}>
                 <u>Use my current location</u>
             </div>
             
-            <div className= {classes.button}>
+            <div className={classes.button}>
                 <button type="button"
                     onClick={onClickHandler}
-                    onChange={(event) => setLocation(event.target.value)}
                 >
                     continue
                 </button>
