@@ -12,7 +12,7 @@ const Search = () => {
                 <h3>mockuser</h3>
             </div>
             <div className={classes.SearchBar}>
-                <img src=""/>
+                <img src="searchimage.jpg"/>
                 <form>
                     <input className={classes.Text} type="text" placeholder="Search For Events" />
                     <input className={classes.Submit} type="submit" value="search" />
