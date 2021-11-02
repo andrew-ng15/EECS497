@@ -2,7 +2,10 @@ import React from 'react';
 import Home from './components/Home/Home';
 import Test from './components/Test/Test';
 import Signup from './components/Signup/Signup';
-import Search from './components/Search/Search'
+import Search from './components/Search/Search';
+import Results from './components/Results/Results';
+import PersonalInfo from './components/PersonalInfo/PersonalInfo';
+import Hobbies from './components/Hobbies/Hobbies';
 
 import {
     BrowserRouter as Router,
@@ -22,6 +25,9 @@ import {
                     <Route path="/test" exact component={Test} />
                     <Route path="/signup" exact component={Signup} />
                     <Route path="/search" exact component={Search} />
+                    <Route path="/results" exact component={Results} />
+                    <Route path="/personalinfo" exact component={PersonalInfo} />
+                    <Route path="/Hobbies" exact component={Hobbies} />
                 </Switch>
             </Router>
         </React.Fragment>

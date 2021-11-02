@@ -8,7 +8,7 @@ const Signup = () => {
         <div>
             <h2 className={classes.Title}>Fill out some information for us:</h2>
             <div>
-                <form action="/accounts/create/?target=/" method='POST'>
+                <form action="/personalinfo/" method='GET'>
                     <input className={classes.Boxes} type="text" placeholder="Username" required name = "username" />
                     <input className={classes.Boxes} type="password" placeholder="Password" required name = "password" />
                     <input className={classes.Boxes} type="submit" value="continue" />

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import classes from './Home.module.scss';
+import classes from './Hobby.module.scss';
 import { useHistory } from 'react-router-dom';
 
-const Home = () => {
+const Hobby = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
@@ -18,7 +18,7 @@ const Home = () => {
     };
 
     return (
-        <div className={classes.Home}>
+        <div className={classes.Hobby}>
             <h1 className={classes.Header}>RATS Matcher</h1>
             <form className={classes.Form} action="/test/" method='GET'>
                 <input
@@ -46,4 +46,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Hobby;
