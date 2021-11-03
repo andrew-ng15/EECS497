@@ -9,14 +9,14 @@ const Search = () => {
 
     return (
         <div className={classes.Search}>
-            <img src={profpic} className={classes.Logo} />
+            <img src={logo} className={classes.Logo} />
             <div className={classes.Profile}>
-                <img src={logo} />
+                <img src={profpic} />
                 <h3>mockuser</h3>
             </div>
             <div className={classes.SearchBar}>
                 <img src={search} />
-                <form>
+                <form action="/results/">
                     <input className={classes.Text} type="text" placeholder="Search For Events" />
                     <input className={classes.Submit} type="submit" value="search" />
                     <input type="hidden" name="operation" value="search" />

@@ -3,6 +3,8 @@ import classes from './Results.module.scss';
 import pic1 from './uploads/1.jpg';
 import pic2 from './uploads/2.jpg';
 import pic3 from './uploads/3.jpg';
+import pic4 from './uploads/lollipop.jpeg';
+
 const Results = () => {
     return (
         <div className={classes.results}>
@@ -31,6 +33,15 @@ const Results = () => {
                 Interests: Rock Concerts, Soccer, Baking, Sky Diving
                 <div></div>
                 Contact: AlfonsoP923@gmail.com
+            </div>
+            <div className={classes.padder}></div>
+            <div className={classes.post}>
+                <img src= {pic4} width="200" height="200" alt="failed" />
+                Name: Kai
+                <div></div>
+                Interests: Concerts, Music, Movies, Pottery, Volleyball
+                <div></div>
+                Contact: Kai@gmail.com
             </div>
         </div>
     );

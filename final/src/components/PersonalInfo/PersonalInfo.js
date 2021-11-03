@@ -18,6 +18,24 @@ const PersonalInfo = () => {
 
     return (
         <div className={classes.PersonalInfo}> 
+            <h1>Enter your name here:</h1>
+            <div className={classes.box}>
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    onChange={(event) => setLocation(event.target.value)}
+                />
+            </div>
+            <h1>Enter your contact info here:</h1>
+            <div className={classes.box}>
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    onChange={(event) => setLocation(event.target.value)}
+                />
+            </div>
             <h1>Enter your location here:</h1>
             <div className={classes.box}>
                 <input

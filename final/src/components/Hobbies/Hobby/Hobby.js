@@ -23,6 +23,12 @@ const Hobby = () => {
                 <option value="Sports"/>
                 <option value="Movies"/>
                 <option value="Nightlife"/>
+                <option value="Concerts"/>
+                <option value="Volleyball"/>
+                <option value="Comedy Shows"/>
+                <option value="Pottery"/>
+                <option value="Hang gliding"/>
+                <option value="Kayaking"/>
             </datalist>
         </div>
     );
