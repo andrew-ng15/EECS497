@@ -3,7 +3,6 @@ import classes from './Search.module.scss';
 import profpic from './uploads/profpic.jpg';
 import logo from './uploads/logo.jpg';
 import search from './uploads/search.png'
-import hamburger from './uploads/hamburger.png'
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useHistory } from "react-router";
 import { appAuth, db, logout } from "../firebase";
