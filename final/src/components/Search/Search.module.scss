@@ -1,32 +1,59 @@
 .Search{
+    margin: 10px; 
     .Logo {
-        margin: 20px; 
         padding:20px
     }
     .Profile {
         float: right;
         display: flex;
-
-        img {
+        .profpic {
             margin: 20px;
+            border-radius: 100%;
+        }
+        // .burger {
+        //     margin: 30px;
+        //     .line {
+        //         width: 20px;
+        //         background: white;
+        //         border: 2px solid black;
+        //         margin: 3px;
+        //         border-radius: 20px;
+        //     }
+        // }
+        h3 {
+            margin-top:30px;
+        }
+        button {
+            border-radius: 20px;
+            float: left;
+            margin: 20px;
+            padding: 5px;
+            border: 0px;
+            width: 100%;
+            &:hover {
+                background: grey;
+            }
         }
     }
 
-    .SearchBar {
+    .Middle {
         position: absolute;
-        top:50%;
+        top:30%;
         left:20%;
-        display:flex;
 
-        .Text {
-            width: 500px;
-            height:30px;
-            border-radius:20px;
-        }
-        .Submit {
-            height: 30px;
-            border-radius: 20px;
-            
+        .SearchBar {
+            display:flex;
+
+            .Text {
+                width: 500px;
+                height:30px;
+                border-radius:20px;
+            }
+            .Submit {
+                height: 30px;
+                border-radius: 20px;
+                
+            }
         }
     }
 

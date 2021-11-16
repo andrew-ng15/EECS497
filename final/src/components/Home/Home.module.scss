@@ -1,23 +1,25 @@
 
 $lightblue: rgb(217, 243, 252);
 .Home {
-    max-width: 100%;
-    background-color: $lightblue;
-    display: flex;
-    direction: column;
+    width: 60%;
+    margin:10% auto;
+    background-color: #d9f3fc;
     text-align: center;
-    flex-flow: column;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: "Courier New", monospace;
     
     .Header {
-        font-size: 10rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
         
     }
     form {
-       
+        
         input {
-            margin: .5rem;
+            margin: 1rem;
             max-width: 10rem;
+            border-radius: 5px;
         }
     }
 
@@ -25,4 +27,4 @@ $lightblue: rgb(217, 243, 252);
         margin: 3rem;
         margin-top: 1rem;
     }
-}
+} 
