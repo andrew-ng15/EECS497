@@ -3,8 +3,9 @@ import classes from './Hobbies.module.scss';
 import Hobby from './Hobby/Hobby';
 import { useHistory } from 'react-router-dom';
 
-const Hobbies = () => {
 
+const Hobbies = () => {
+    // const [profpic, setProfPic] = useState("");
     const [inputList, setInputList] = useState([<Hobby />]);
     const [hobbyList, setHobbyList] = useState([]);
 

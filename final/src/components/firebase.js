@@ -41,6 +41,8 @@ const registerWithEmailAndPassword = async (name, email, password) => {
       email,
       contact: "",
       location: "",
+      profpicUrl: "",
+      hobbies: [],
     });
   } catch (err) {
     console.error(err);
